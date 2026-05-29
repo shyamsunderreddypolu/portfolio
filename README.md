@@ -49,8 +49,12 @@ npm run preview
 
 ## Deployment
 
-This repository is ready to deploy to GitHub Pages, Vercel, Netlify, or any static hosting platform that supports Vite.
-s
+This portfolio is deployed on Vercel and available at:
+
+https://portfolio-one-black-eieoymagpl.vercel.app/
+
+The repository is also ready to deploy to GitHub Pages, Netlify, or any static hosting platform that supports Vite.
+
 ## License
 
 This repository is open source and free to use.
