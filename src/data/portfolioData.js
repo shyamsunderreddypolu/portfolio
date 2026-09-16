@@ -16,7 +16,7 @@ export const personalInfo = {
     primary: "polushyamsunderreddy@gmail.com",
   },
   summary:
-    "Full-Stack Java Developer and B.Tech Information Technology undergraduate at GNITC Hyderabad (8.1 CGPA). Experienced in building production-ready web applications, secure RESTful APIs, and database architectures using Java, Spring Boot, Spring Security, React, and MySQL. Strong background in Data Structures, Algorithms, and Object-Oriented Design.",
+    "Full-Stack Java Developer and B.Tech Information Technology undergraduate at GNITC Hyderabad. Experienced in building production-ready web applications, secure RESTful APIs, and database architectures using Java, Spring Boot, Spring Security, React, and MySQL. Strong background in Data Structures, Algorithms, and Object-Oriented Design.",
   resumeUrl: "/Shyam_Sunder_Reddy_Resume.pdf",
 };
 
@@ -33,7 +33,6 @@ export const heroContent = {
   subtitle:
     "I build full-stack applications and backend systems using Java, Spring Boot, React, REST APIs, and MySQL.",
   ctaPrimary: { text: "View Projects", href: "#projects" },
-  ctaResume: { text: "Download Resume", href: "/Shyam_Sunder_Reddy_Resume.pdf" },
   ctaGitHub: { text: "GitHub", href: "https://github.com/shyamsunderreddypolu" },
   ctaLinkedIn: { text: "LinkedIn", href: "https://linkedin.com/in/polushyamsunderreddy" },
   ctaContact: { text: "Contact Me", href: "#contact" },
@@ -42,9 +41,9 @@ export const heroContent = {
 export const aboutContent = {
   heading: "About Me",
   tagline: "Full-Stack Java Developer | Spring Boot | React",
-  bio: "I am a <strong>Full-Stack Java Developer</strong> and B.Tech Information Technology undergraduate at <strong>GNITC Hyderabad (8.1 CGPA)</strong>, actively preparing for software development campus placements. My technical core centers on building end-to-end full-stack applications and secure backend systems using <strong>Java, Spring Boot, REST APIs, React, and MySQL</strong>.<br /><br />During my web development internship at <strong>Wheeltrix Group</strong>, I engineered modular REST services, stateless authentication with <strong>Spring Security & JWT</strong>, and relational schemas in MySQL. With a solid foundation in <strong>Data Structures, Algorithms (DSA)</strong>, and Object-Oriented Design, I focus on engineering clean, scalable architectures with robust security and verified test coverage.",
+  bio: "I am a <strong>Full-Stack Java Developer</strong> and B.Tech Information Technology undergraduate at <strong>GNITC Hyderabad</strong>, actively preparing for software development campus placements. My technical core centers on building end-to-end full-stack applications and secure backend systems using <strong>Java, Spring Boot, REST APIs, React, and MySQL</strong>.<br /><br />During my web development internship at <strong>Wheeltrix Group</strong>, I engineered modular REST services, stateless authentication with <strong>Spring Security & JWT</strong>, and relational schemas in MySQL. With a solid foundation in <strong>Data Structures, Algorithms (DSA)</strong>, and Object-Oriented Design, I focus on engineering clean, scalable architectures with robust security and verified test coverage.",
   stats: [
-    { label: "B.Tech IT CGPA", value: "8.1" },
+    { label: "Degree Focus", value: "B.Tech IT" },
     { label: "Backend Core", value: "Java & Spring Boot" },
     { label: "Frontend", value: "React & Modern UI" },
     { label: "Database", value: "MySQL & Relational Design" },
@@ -297,7 +296,6 @@ export const education = {
   shortDegree: "B.Tech – Information Technology",
   institution: "Guru Nanak Institutions Technical Campus (GNITC)",
   location: "Hyderabad, India",
-  cgpa: "8.1 / 10.0",
   graduation: "2023 – 2027 (Expected)",
   highlights: [
     "Core Focus: Object-Oriented Programming (OOP), Data Structures & Algorithms (DSA), DBMS, Operating Systems",
@@ -402,9 +400,9 @@ export const footerContent = {
   taglines: [
     "Full-Stack Java Developer",
     "Java · Spring Boot · React · REST APIs · MySQL",
-    "GNITC Hyderabad · B.Tech IT · 8.1 CGPA",
+    "GNITC Hyderabad · B.Tech IT",
   ],
-  credential: "B.Tech IT (GNITC) · CGPA 8.1",
+  credential: "B.Tech IT (GNITC)",
   availabilityText: "Available for campus placements & software engineering roles",
   copyright: `© ${new Date().getFullYear()} Polu Shyam Sunder Reddy. All rights reserved.`,
 };

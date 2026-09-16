@@ -146,20 +146,6 @@ const Hero = () => {
               {heroContent.ctaPrimary.text}
             </a>
 
-            {/* Resume Download Button */}
-            <a 
-              href={heroContent.ctaResume.href}
-              download="Shyam_Sunder_Reddy_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-5 py-2.5 md:px-6 md:py-3 text-xs md:text-sm rounded-full bg-red-600/30 border border-red-500/50 text-white font-bold hover:bg-[#ff2a2a] hover:border-transparent transition-all duration-300 backdrop-blur-md flex items-center gap-2 shadow-[0_0_20px_rgba(255,42,42,0.3)]"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              {heroContent.ctaResume.text}
-            </a>
-
             {/* GitHub */}
             <a 
               href={socialLinks.github}
@@ -193,17 +179,15 @@ const Hero = () => {
         {/* Right Side: Interactive Action Button ("Explore Work") */}
         <a 
           href="#projects"
-          data-aos="zoom-in"
+          data-aos="fade-left"
           data-aos-delay="600"
-          className="mt-8 md:mt-0 flex flex-row md:flex-col items-center gap-2 md:gap-3 cursor-pointer group self-start md:self-auto"
+          className="mt-8 md:mt-0 px-6 py-3.5 rounded-full bg-black/60 hover:bg-[#ff2a2a] border border-white/20 hover:border-transparent text-white font-bold text-xs md:text-sm tracking-wide transition-all duration-300 backdrop-blur-md flex items-center gap-3 shadow-[0_10px_25px_rgba(0,0,0,0.5)] hover:shadow-[0_0_30px_rgba(255,42,42,0.6)] group transform hover:-translate-y-0.5 cursor-pointer self-start md:self-auto"
         >
-          <div className="w-12 h-12 md:w-20 md:h-20 rounded-full border border-white/30 bg-black/40 backdrop-blur-md flex justify-center items-center group-hover:scale-110 group-hover:bg-[#ff2a2a] transition-all duration-500 shadow-[0_0_30px_rgba(255,255,255,0.1)] group-hover:shadow-[0_0_40px_rgba(255,42,42,0.6)]">
-            <svg className="w-5 h-5 md:w-8 md:h-8 text-white ml-0.5 md:ml-1 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
+          <span>Explore Work</span>
+          <span className="w-7 h-7 rounded-full bg-white/10 group-hover:bg-white/25 flex items-center justify-center transition-colors">
+            <svg className="w-3.5 h-3.5 text-white transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
-          </div>
-          <span className="text-white text-[10px] md:text-xs font-bold tracking-widest uppercase opacity-80 group-hover:opacity-100 transition-opacity">
-            Explore Work
           </span>
         </a>
       </div>

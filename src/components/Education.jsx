@@ -49,12 +49,11 @@ const Education = () => {
               </div>
             </div>
 
-            {/* CGPA Badge */}
+            {/* Major / Department Badge */}
             <div className="flex flex-col items-start md:items-end bg-black/40 border border-white/10 px-6 py-4 rounded-2xl">
-              <span className="text-white/50 text-xs font-mono uppercase tracking-wider">Academic Score</span>
-              <div className="flex items-baseline gap-1 mt-1">
-                <span className="text-white text-3xl md:text-4xl font-black">{education.cgpa}</span>
-                <span className="text-red-400 text-sm font-bold">/ 10 CGPA</span>
+              <span className="text-white/50 text-xs font-mono uppercase tracking-wider">Department</span>
+              <div className="text-white text-lg md:text-xl font-black mt-1">
+                Information Technology
               </div>
             </div>
           </div>
