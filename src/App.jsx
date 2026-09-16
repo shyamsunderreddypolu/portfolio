@@ -1,28 +1,37 @@
-import { useTheme } from './hooks/useTheme'
+import Preloader from './components/Preloader'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import Skills from './components/Skills'
+import TechnicalSkills from './components/TechnicalSkills'
+import Services from './components/Services'
 import Projects from './components/Projects'
-import Certifications from './components/Certifications'
+import Internships from './components/Internships'
+import Leadership from './components/Leadership'
+import Education from './components/Education'
+import Certificates from './components/Certificates'
+import SoftSkills from './components/SoftSkills'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
-export default function App() {
-  const { dark, toggle } = useTheme()
-
+function App() {
   return (
-    <div className="dark bg-[#09090f] text-white min-h-screen overflow-x-hidden">
-      <Navbar dark={dark} toggleTheme={toggle} />
-      <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Certifications />
-        <Contact />
-      </main>
+    <>
+      <Preloader />
+      <Navbar />
+      <Hero />
+      <About />
+      <TechnicalSkills />
+      <Services />
+      <Projects />
+      <Internships />
+      <Leadership />
+      <Education />
+      <Certificates />
+      <SoftSkills />
+      <Contact />
       <Footer />
-    </div>
+    </>
   )
 }
+
+export default App

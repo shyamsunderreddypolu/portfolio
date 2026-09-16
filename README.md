@@ -1,60 +1,49 @@
-# Portfolio Website
+# Polu Shyam Sunder Reddy — Portfolio Website
 
-A personal portfolio built with React, Vite, and Tailwind CSS. This project showcases skills, projects, certifications, and contact information in a modern responsive design.
+Personal portfolio website for **Polu Shyam Sunder Reddy**, Java Developer & Backend Engineer specializing in Java, Spring Boot, REST APIs, Spring Security, MySQL, and scalable enterprise architectures.
 
-## Features
+## 🚀 Built With
+- **React 19**
+- **Vite**
+- **Tailwind CSS v4**
+- **Framer Motion** & **AOS** (Animate On Scroll)
+- **EmailJS** (Contact form handling)
 
-- React 19 + Vite for fast development and optimized builds
-- Tailwind CSS styling with responsive layout support
-- Framer Motion animations for smooth transitions
-- React Icons for clean iconography
-- Separate sections for home, about, skills, projects, certifications, and contact
-- Accessible navigation and polished UI
+## 📌 Features
+- **Cinematic Dark Theme**: Responsive, high-contrast visual design with custom micro-interactions.
+- **Interactive Hero & Navbar**: Dynamic greeting, resume download, and quick navigation.
+- **Lanyard Badge About Section**: Physics-inspired interactive identity badge.
+- **Skills & Process**: Categorized technical competencies with animated progress indicators and step-by-step engineering workflows.
+- **Projects**: Detailed showcase of *Placement Prep Platform* and *Secure Ranked Multi-Keyword Search System*.
+- **Work Experience & Leadership**: Wheeltrix internship details, Infonex Association coordinator, and Techtrix Hackathon leadership.
+- **Education & Certifications**: B.Tech Information Technology from GNITC (8.1 CGPA), with verified credentials from Infosys Springboard and Simplilearn.
+- **Functional Contact Form**: Direct message integration.
 
-## Project Structure
+## 🛠️ Getting Started Locally
 
-- `src/App.jsx` – main application shell
-- `src/components/` – reusable layout and content sections
-- `src/data/portfolio.js` – portfolio content and project data
-- `src/hooks/useTheme.js` – theme toggle support
-- `src/index.css` – global styles
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
 
-## Getting Started
-
-### Install dependencies
-
+### Installation
 ```bash
+# Clone the repository
+git clone https://github.com/shyamsunderreddypolu/portfolio.git
+
+# Navigate to the project directory
+cd portfolio
+
+# Install dependencies
 npm install
-```
 
-### Run locally
-
-```bash
+# Start development server
 npm run dev
 ```
 
-Open the local URL shown in the terminal to view the site.
-
-### Build for production
-
+### Production Build
 ```bash
 npm run build
 ```
 
-### Preview production build
-
-```bash
-npm run preview
-```
-
-## Deployment
-
-This portfolio is deployed on Vercel and available at:
-
-https://portfolio-one-black-eieoymagpl.vercel.app/
-
-The repository is also ready to deploy to GitHub Pages, Netlify, or any static hosting platform that supports Vite.
-
-## License
-
-This repository is open source and free to use.
+## 📄 License
+This project is open-source and available under the MIT License.
