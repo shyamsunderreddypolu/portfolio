@@ -9,11 +9,10 @@ const LeadershipItem = ({ item, index }) => {
       <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 bg-[#ff2a2a] rounded-full border-4 border-black z-30 shadow-[0_0_15px_#ff2a2a] group-hover:scale-125 transition-transform duration-300" />
 
       {/* Card Content Side */}
-      <div 
+      <div
         data-aos={isEven ? "fade-right" : "fade-left"}
-        className={`w-full md:w-[45%] pl-12 md:pl-0 ${
-          isEven ? 'md:text-right md:order-1' : 'md:text-left md:order-2'
-        }`}
+        className={`w-full md:w-[45%] pl-12 md:pl-0 ${isEven ? 'md:text-right md:order-1' : 'md:text-left md:order-2'
+          }`}
       >
         <div className="bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-red-500/30 hover:shadow-[0_15px_35px_rgba(255,42,42,0.1)] transition-all duration-500">
           <div className={`flex flex-wrap gap-2 items-center mb-3 ${isEven ? 'md:justify-end' : 'md:justify-start'}`}>
@@ -26,7 +25,7 @@ const LeadershipItem = ({ item, index }) => {
               </span>
             )}
           </div>
-          
+
           <h3 className="text-white text-xl font-black mb-1 tracking-tight group-hover:text-[#ff2a2a] transition-colors">
             {item.title}
           </h3>
@@ -48,7 +47,7 @@ const LeadershipItem = ({ item, index }) => {
 const Leadership = () => {
   return (
     <section className="bg-[#0a0a0a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]">
-      
+
       {/* Torn paper divider at top */}
       <div className="absolute top-0 left-0 w-full pointer-events-none z-10 transform -translate-y-[1px] rotate-180">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-12 md:h-20 fill-[#ff2a2a]">
@@ -57,7 +56,7 @@ const Leadership = () => {
       </div>
 
       <div className="max-w-6xl mx-auto relative z-20">
-        
+
         {/* Header */}
         <div data-aos="fade-up" className="mb-20 text-center">
           <div className="inline-block border border-white/20 rounded-full px-5 py-1.5 text-sm text-white/60 font-bold mb-6 shadow-sm bg-white/5 backdrop-blur-sm">
@@ -90,4 +89,3 @@ const Leadership = () => {
 };
 
 export default Leadership;
-

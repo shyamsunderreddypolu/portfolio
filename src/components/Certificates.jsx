@@ -1,7 +1,7 @@
 import { certificates } from '../data/portfolioData';
 
 const CertificateCard = ({ cert, aosDelay }) => (
-  <div 
+  <div
     data-aos="zoom-in"
     data-aos-delay={aosDelay}
     className="bg-black/25 backdrop-blur-md rounded-2xl p-6 border border-white/15 hover:border-white/30 hover:scale-[1.02] hover:shadow-[0_15px_40px_rgba(0,0,0,0.3)] transition-all duration-500 group flex flex-col justify-between"
@@ -67,7 +67,7 @@ const CertificateCard = ({ cert, aosDelay }) => (
 const Certificates = () => {
   return (
     <section id="certificates" className="bg-[#ff2a2a] pt-20 pb-28 px-6 md:px-12 w-full relative overflow-hidden font-sans">
-      
+
       {/* Torn paper divider at top */}
       <div className="absolute top-0 left-0 w-full pointer-events-none z-10 transform -translate-y-[1px] rotate-180">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-12 md:h-20 fill-[#0a0a0a]">
@@ -89,10 +89,10 @@ const Certificates = () => {
         {/* Certificate Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-12">
           {certificates.featured.map((cert, index) => (
-            <CertificateCard 
-              key={cert.name} 
-              cert={cert} 
-              aosDelay={String((index + 1) * 100)} 
+            <CertificateCard
+              key={cert.name}
+              cert={cert}
+              aosDelay={String((index + 1) * 100)}
             />
           ))}
         </div>
@@ -118,14 +118,13 @@ const Certificates = () => {
 
       {/* Decorative stars */}
       <div className="absolute top-16 left-6 md:left-16 text-black opacity-20 animate-pulse">
-        <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z"/></svg>
+        <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z" /></svg>
       </div>
       <div className="absolute bottom-20 right-8 md:right-24 text-black opacity-20 animate-pulse" style={{ animationDelay: '1.5s' }}>
-        <svg className="w-14 h-14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z"/></svg>
+        <svg className="w-14 h-14" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0l2.5 8.5L23 12l-8.5 2.5L12 23l-2.5-8.5L1 12l8.5-2.5z" /></svg>
       </div>
     </section>
   );
 };
 
 export default Certificates;
-

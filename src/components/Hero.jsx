@@ -88,57 +88,104 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
+          <div data-aos="fade-up" className="mb-2">
+            <span className="inline-block text-xs md:text-sm font-mono font-semibold tracking-wider text-red-400 uppercase bg-red-500/10 px-3.5 py-1 rounded-full border border-red-500/20 mb-3">
+              {heroContent.badge}
+            </span>
+          </div>
+
           <h1 
             data-aos="fade-up"
-            className="text-white text-3xl md:text-5xl font-extrabold mb-4 tracking-tight leading-tight"
+            data-aos-delay="100"
+            className="text-white text-3xl md:text-5xl font-extrabold mb-3 tracking-tight leading-tight"
           >
-            {heroContent.greeting}, <br /> 
-            <span className="text-transparent [-webkit-text-stroke:1.5px_#ffffff] drop-shadow-lg">
-              {heroContent.titleHighlight}
-            </span>
+            {heroContent.greeting}
           </h1>
+
+          <div 
+            data-aos="fade-up"
+            data-aos-delay="200"
+            className="text-lg md:text-2xl font-bold mb-4 tracking-tight"
+          >
+            <span className="text-white">
+              Full-Stack Java Developer
+            </span>
+            <span className="text-red-500 mx-2 font-light">|</span>
+            <span className="text-white/90">
+              Spring Boot
+            </span>
+            <span className="text-red-500 mx-2 font-light">|</span>
+            <span className="text-white/80">
+              React
+            </span>
+          </div>
 
           {/* Subheading */}
           <p 
             data-aos="fade-up"
-            data-aos-delay="200"
-            className="text-white/90 text-sm md:text-lg font-medium mb-8 max-w-lg leading-relaxed drop-shadow"
+            data-aos-delay="300"
+            className="text-white/85 text-sm md:text-base font-medium mb-8 max-w-xl leading-relaxed drop-shadow"
           >
             {heroContent.subtitle}
           </p>
 
-          {/* Buttons */}
+          {/* CTAs */}
           <div 
             data-aos="fade-up"
             data-aos-delay="400"
             className="flex flex-row flex-wrap items-center gap-3 w-full"
           >
-            {/* Primary Button */}
+            {/* View Projects */}
             <a 
               href={heroContent.ctaPrimary.href}
-              className="px-5 py-2.5 md:px-7 md:py-3 text-xs md:text-sm rounded-full bg-white text-black font-bold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.25)]"
+              className="px-5 py-2.5 md:px-6 md:py-3 text-xs md:text-sm rounded-full bg-white text-black font-bold hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(255,255,255,0.25)] flex items-center gap-2"
             >
+              <svg className="w-4 h-4 text-black" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/>
+              </svg>
               {heroContent.ctaPrimary.text}
-            </a>
-            
-            {/* Secondary Button - Glassmorphism style */}
-            <a 
-              href={heroContent.ctaSecondary.href}
-              className="px-5 py-2.5 md:px-7 md:py-3 text-xs md:text-sm rounded-full bg-black/50 border border-white/30 text-white font-bold hover:bg-black/80 hover:border-white transition-all duration-300 backdrop-blur-md"
-            >
-              {heroContent.ctaSecondary.text}
             </a>
 
             {/* Resume Download Button */}
             <a 
               href={heroContent.ctaResume.href}
               download="Shyam_Sunder_Reddy_Resume.pdf"
-              className="px-5 py-2.5 md:px-7 md:py-3 text-xs md:text-sm rounded-full bg-red-600/30 border border-red-500/50 text-white font-bold hover:bg-[#ff2a2a] hover:border-transparent transition-all duration-300 backdrop-blur-md flex items-center gap-2 shadow-[0_0_20px_rgba(255,42,42,0.3)]"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-5 py-2.5 md:px-6 md:py-3 text-xs md:text-sm rounded-full bg-red-600/30 border border-red-500/50 text-white font-bold hover:bg-[#ff2a2a] hover:border-transparent transition-all duration-300 backdrop-blur-md flex items-center gap-2 shadow-[0_0_20px_rgba(255,42,42,0.3)]"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
               </svg>
               {heroContent.ctaResume.text}
+            </a>
+
+            {/* GitHub */}
+            <a 
+              href={socialLinks.github}
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="px-4 py-2.5 md:px-5 md:py-3 text-xs md:text-sm rounded-full bg-black/50 border border-white/30 text-white font-bold hover:bg-black/80 hover:border-white transition-all duration-300 backdrop-blur-md flex items-center gap-2"
+              aria-label="GitHub"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+              </svg>
+              GitHub
+            </a>
+
+            {/* LinkedIn */}
+            <a 
+              href={socialLinks.linkedin}
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="px-4 py-2.5 md:px-5 md:py-3 text-xs md:text-sm rounded-full bg-black/50 border border-white/30 text-white font-bold hover:bg-black/80 hover:border-white transition-all duration-300 backdrop-blur-md flex items-center gap-2"
+              aria-label="LinkedIn"
+            >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+              LinkedIn
             </a>
           </div>
         </div>

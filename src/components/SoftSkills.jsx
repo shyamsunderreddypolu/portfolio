@@ -1,7 +1,7 @@
 import { softSkillsList } from '../data/portfolioData';
 
 const SoftSkillCard = ({ skill, index }) => (
-  <div 
+  <div
     data-aos="fade-up"
     data-aos-delay={index * 100}
     className="bg-[#f8f8f8] border border-gray-200 rounded-3xl p-6 hover:scale-[1.03] hover:bg-white hover:border-[#ff2a2a]/30 hover:shadow-[0_20px_45px_rgba(255,42,42,0.08)] transition-all duration-500 group flex flex-col items-center text-center justify-between min-h-[220px]"
@@ -23,7 +23,7 @@ const SoftSkillCard = ({ skill, index }) => (
 const SoftSkills = () => {
   return (
     <section className="bg-white pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#80808006_1px,transparent_1px),linear-gradient(to_bottom,#80808006_1px,transparent_1px)] bg-[size:60px_60px]">
-      
+
       {/* Top paper divider (torn SVG transition from dark section) */}
       <div className="absolute top-0 left-0 w-full pointer-events-none z-10 transform -translate-y-[1px] rotate-180">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full h-12 md:h-20 fill-[#0a0a0a]">
@@ -32,7 +32,7 @@ const SoftSkills = () => {
       </div>
 
       <div className="max-w-6xl mx-auto relative z-20">
-        
+
         {/* Header */}
         <div data-aos="fade-up" className="mb-16 md:mb-20 text-center">
           <div className="inline-block border border-gray-300 rounded-full px-5 py-1.5 text-sm text-gray-600 font-bold mb-6 shadow-sm bg-white">
@@ -59,4 +59,3 @@ const SoftSkills = () => {
 };
 
 export default SoftSkills;
-

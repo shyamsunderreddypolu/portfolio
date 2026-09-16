@@ -3,7 +3,7 @@ import { education } from '../data/portfolioData';
 const Education = () => {
   return (
     <section id="education" className="bg-[#0a0a0a] pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:80px_80px]">
-      
+
       {/* Background ambient lighting */}
       <div className="absolute top-1/3 right-10 w-96 h-96 bg-red-600/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-80 h-80 bg-red-500/10 rounded-full blur-[120px] pointer-events-none" />
@@ -23,7 +23,7 @@ const Education = () => {
         </div>
 
         {/* Education Highlight Card */}
-        <div 
+        <div
           data-aos="fade-up"
           data-aos-delay="200"
           className="max-w-4xl mx-auto bg-white/5 backdrop-blur-md border border-white/15 rounded-3xl p-8 md:p-12 hover:border-red-500/40 hover:shadow-[0_20px_50px_rgba(255,42,42,0.15)] transition-all duration-500"
@@ -75,7 +75,7 @@ const Education = () => {
                 "Software Engineering Principles",
                 "Web Technologies",
               ].map((subject) => (
-                <span 
+                <span
                   key={subject}
                   className="px-4 py-2 text-xs md:text-sm font-semibold text-white/80 bg-white/5 rounded-xl border border-white/10 hover:border-red-500/30 hover:bg-white/10 hover:text-white transition-all"
                 >
@@ -104,4 +104,3 @@ const Education = () => {
 };
 
 export default Education;
-

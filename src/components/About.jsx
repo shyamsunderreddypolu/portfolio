@@ -74,21 +74,39 @@ const About = () => {
         {/* Right Side: Info Content */}
         <div data-aos="fade-left" data-aos-delay="200" className="flex-1 text-white mt-8 md:mt-0 relative z-20">
           
-          <h2 className="text-4xl md:text-5xl font-black text-black mb-4 tracking-tight">{aboutContent.heading}</h2>
+          <div className="inline-block border border-black/20 rounded-full px-4 py-1 text-xs font-mono font-bold text-black/80 uppercase mb-3 bg-black/10">
+            {aboutContent.tagline}
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black text-black mb-6 tracking-tight">{aboutContent.heading}</h2>
           <p 
-            className="text-lg font-bold mb-12 leading-relaxed max-w-3xl text-red-50"
+            className="text-base md:text-lg font-medium mb-8 leading-relaxed max-w-3xl text-white drop-shadow-sm"
             dangerouslySetInnerHTML={{ __html: aboutContent.bio }}
           />
 
+          {/* Recruiter Quick Stats Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+            {aboutContent.stats.map((stat, i) => (
+              <div 
+                key={i}
+                data-aos="fade-up"
+                data-aos-delay={300 + i * 50}
+                className="bg-black/20 backdrop-blur-sm border border-black/15 rounded-xl p-3.5 text-center"
+              >
+                <div className="text-xl md:text-2xl font-black text-white mb-0.5">{stat.value}</div>
+                <div className="text-[11px] font-bold text-red-100 uppercase tracking-wider">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+
           {/* Horizontal Skills Row */}
-          <div className="flex items-center gap-10 mt-8">
-            <div data-aos="zoom-in" data-aos-delay="300" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+          <div className="flex items-center gap-8 md:gap-10 pt-2 border-t border-black/10">
+            <div data-aos="zoom-in" data-aos-delay="500" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <JavaIcon />
             </div>
-            <div data-aos="zoom-in" data-aos-delay="450" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+            <div data-aos="zoom-in" data-aos-delay="600" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <SpringBootIcon />
             </div>
-            <div data-aos="zoom-in" data-aos-delay="600" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
+            <div data-aos="zoom-in" data-aos-delay="700" className="hover:scale-110 transition-transform duration-300 cursor-pointer drop-shadow-2xl">
               <MySQLIcon />
             </div>
           </div>
